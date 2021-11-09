@@ -1,12 +1,15 @@
 #pragma once
 #include <unordered_map>
 #include <string>
+#include <iostream>
 
 using namespace std;
 
 class Conversion {
 private:
-	std::unordered_map<char, int> encryption;
+	unordered_map<int, char> encryption;
+	unordered_map<char, int> decryption;
+	string encryptedP;
 
 public:
 	Conversion();

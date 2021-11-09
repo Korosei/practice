@@ -5,16 +5,14 @@
 using namespace std;
 
 int main() {
-	char a = 'a';
-	cout << a;
-	a++;
-	cout << endl << a;
-	/*
-	long passWord;
+	int password;
+	string encryptedP;
+	Conversion enc;
 
 	cout << "Please enter your password: ";
-	cin >> passWord;
+	cin >> password;
 
-	cout << endl << "Your encryption code is: ";
-	*/
+	encryptedP = enc.encrypt(password);
+	cout << "\nYour encrypted password is: " << encryptedP;
+	cout << "\nYour password is: " << enc.decrypt(encryptedP);
 }
